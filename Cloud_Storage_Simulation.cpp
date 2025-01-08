@@ -77,3 +77,15 @@ int main() {
     CloudStorage cloud;
     int choice;
     string fileName, content;
+    
+    // Add menu loop
+    do {
+        cout << "\nCloud Storage Simulation\n";
+        cout << "1. Upload File\n";
+        cout << "2. Retrieve File\n";
+        cout << "3. Delete File\n";
+        cout << "4. List Files\n";
+        cout << "5. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+        cin.ignore();
