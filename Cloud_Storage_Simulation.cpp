@@ -12,3 +12,6 @@
 
 // Include vector header
 #include <vector>
+
+// Start using namespace std
+using namespace std;
