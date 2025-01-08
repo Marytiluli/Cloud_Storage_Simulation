@@ -26,3 +26,17 @@ struct File {
 class CloudStorage {
 private:
     unordered_map<string, File> storage;
+    
+public:
+    // Add uploadFile method
+    void uploadFile(const string& fileName, const string& content) {
+        if (storage.find(fileName) != storage.end()) {
+            cout << "Error: File already exists.\n";
+            return;
+        }
+        File file = {fileName, content};
+        storage[fileName] = file;
+        cout << "File '" << fileName << "' uploaded successfully.\n";
+    }
+    
+    
