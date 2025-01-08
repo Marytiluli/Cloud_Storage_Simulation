@@ -9,3 +9,6 @@
 
 // Include string header
 #include <string>
+
+// Include vector header
+#include <vector>
