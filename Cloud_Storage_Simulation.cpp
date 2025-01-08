@@ -123,4 +123,10 @@ int main() {
 			case 5:
                 // Handle exit
                 cout << "Exiting...\n";
-                break;	    
+                break;
+				
+			default:
+                // Handle invalid choice
+                cout << "Invalid choice. Try again.\n";
+        }
+    } while (choice != 5);	    
