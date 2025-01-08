@@ -100,3 +100,10 @@ int main() {
                 getline(cin, content);
                 cloud.uploadFile(fileName, content);
                 break;
+                
+            case 2:
+                // Handle file retrieval
+                cout << "Enter file name: ";
+                getline(cin, fileName);
+                cloud.retrieveFile(fileName);
+                break;    
