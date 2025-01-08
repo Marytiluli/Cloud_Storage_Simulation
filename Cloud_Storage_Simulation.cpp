@@ -71,3 +71,9 @@ public:
         }
     }
 };
+
+// Start main function
+int main() {
+    CloudStorage cloud;
+    int choice;
+    string fileName, content;
