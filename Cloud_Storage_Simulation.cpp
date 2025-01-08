@@ -113,4 +113,9 @@ int main() {
                 cout << "Enter file name: ";
                 getline(cin, fileName);
                 cloud.deleteFile(fileName);
-                break;    
+                break;
+				
+			case 4:
+                // Handle listing files
+                cloud.listFiles();
+                break;	    
