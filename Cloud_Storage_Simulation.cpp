@@ -58,3 +58,16 @@ public:
         storage.erase(fileName);
         cout << "File '" << fileName << "' deleted successfully.\n";
     }
+    
+    // Add listFiles method
+    void listFiles() {
+        if (storage.empty()) {
+            cout << "No files found in storage.\n";
+            return;
+        }
+        cout << "Files in storage:\n";
+        for (const auto& pair : storage) {
+            cout << "- " << pair.first << endl;
+        }
+    }
+};
