@@ -129,4 +129,8 @@ int main() {
                 // Handle invalid choice
                 cout << "Invalid choice. Try again.\n";
         }
-    } while (choice != 5);	    
+    } while (choice != 5);
+	
+	// Return from main function
+    return 0;
+}	    
