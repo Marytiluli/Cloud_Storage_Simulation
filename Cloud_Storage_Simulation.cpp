@@ -39,4 +39,12 @@ public:
         cout << "File '" << fileName << "' uploaded successfully.\n";
     }
     
-    
+    // Add retrieveFile method
+    void retrieveFile(const string& fileName) {
+        if (storage.find(fileName) == storage.end()) {
+            cout << "Error: File not found.\n";
+            return;
+        }
+        cout << "File Content of '" << fileName << "':\n";
+        cout << storage[fileName].content << endl;
+    }
