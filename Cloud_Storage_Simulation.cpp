@@ -118,4 +118,9 @@ int main() {
 			case 4:
                 // Handle listing files
                 cloud.listFiles();
+                break;
+				
+			case 5:
+                // Handle exit
+                cout << "Exiting...\n";
                 break;	    
