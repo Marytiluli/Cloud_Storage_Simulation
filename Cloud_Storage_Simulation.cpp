@@ -48,3 +48,13 @@ public:
         cout << "File Content of '" << fileName << "':\n";
         cout << storage[fileName].content << endl;
     }
+    
+    // Add deleteFile method
+    void deleteFile(const string& fileName) {
+        if (storage.find(fileName) == storage.end()) {
+            cout << "Error: File not found.\n";
+            return;
+        }
+        storage.erase(fileName);
+        cout << "File '" << fileName << "' deleted successfully.\n";
+    }
