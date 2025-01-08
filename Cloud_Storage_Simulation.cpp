@@ -15,3 +15,9 @@
 
 // Start using namespace std
 using namespace std;
+
+// Define File struct
+struct File {
+    string name;
+    string content;
+};
