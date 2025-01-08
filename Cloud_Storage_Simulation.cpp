@@ -21,3 +21,8 @@ struct File {
     string name;
     string content;
 };
+
+// Start CloudStorage class
+class CloudStorage {
+private:
+    unordered_map<string, File> storage;
