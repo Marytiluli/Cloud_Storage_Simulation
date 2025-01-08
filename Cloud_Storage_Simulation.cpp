@@ -6,3 +6,6 @@
 
 // Include unordered_map header
 #include <unordered_map>
+
+// Include string header
+#include <string>
