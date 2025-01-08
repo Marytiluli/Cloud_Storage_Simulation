@@ -106,4 +106,11 @@ int main() {
                 cout << "Enter file name: ";
                 getline(cin, fileName);
                 cloud.retrieveFile(fileName);
+                break;
+				
+			case 3:
+                // Handle file deletion
+                cout << "Enter file name: ";
+                getline(cin, fileName);
+                cloud.deleteFile(fileName);
                 break;    
