@@ -92,3 +92,11 @@ int main() {
         
         // Add switch case for menu
         switch (choice) {
+        	case 1:
+                // Handle file upload
+                cout << "Enter file name: ";
+                getline(cin, fileName);
+                cout << "Enter file content: ";
+                getline(cin, content);
+                cloud.uploadFile(fileName, content);
+                break;
