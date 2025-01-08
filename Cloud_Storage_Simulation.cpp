@@ -89,3 +89,6 @@ int main() {
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
+        
+        // Add switch case for menu
+        switch (choice) {
